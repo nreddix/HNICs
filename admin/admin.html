@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Page</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!-- Linking CSS -->
+    <link rel="stylesheet" type= "text/css" href="../resources/css/style.css"></script>
+</head>
+<body>
+    
+    <div class="container" >
+        <div class="row">
+            <div class="col s12 m12 mainBox">
+                <div class="card-panel grey" id="hiHumanBox">
+                    <span class="white-text">Hi, Human.</span>
+                </div>
+                <div class='row landingButtons'>
+                    <form>
+                    <input name="admin" class="textBox" type="email" id="adminEmail"></a>
+                    <label for="adminEmail">Enter the email of the user you want to make an admin</label>
+                    <button name="admin" class="waves-effect waves-light btn" id="make-admin">Create Admin</button>
+                    </form>
+                </div>
+                <div class="row manageUsers">
+                    <table id="users">
+                        <thead>
+                            <th>
+                                Username
+                            </th>
+                            <th>
+                                Role
+                            </th>
+                            <th>
+                                email
+                            </th>
+                            <th>
+                                Date Joined
+                            </th>
+                            <th>
+                                Mask
+                            </th>
+                            <th>
+                                Icons
+                            </th>
+                            <th>
+                                Tests Taken
+                            </th>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright footer">
+        © 2019 Copyright 
+    </div>
+        <!-- Firebase Link -->
+        <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+        <!-- This links jQuery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!-- This links JS -->
+        <script src="../resources/js/app.js"></script>
+</body>
+</html>
