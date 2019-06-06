@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Hi, Human</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Linking CSS -->
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    </script>
+</head>
+
+<body>
+
+    <!-- Navbar
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">[HiH]</a>
+            <ul class="right hide-on-med-and-down">
+            <li><a>Sign In</a></li>
+            <li><a>Create an Account</a></li>
+            </ul>
+        </div>
+    </nav> -->
+    <nav>
+            <div class="nav-wrapper">
+              <a href="index.html" class="brand-logo">&nbsp [HiH]</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="hhInstructions.html">About App</a></li>
+                <li><a href="#" class="noAuth" id="topSignInLink">Sign In</a></li>
+                <li><a href="#" class="noAuth", id="topCreateLink">Create Account</a></li>
+              </ul>
+            </div>
+          </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 mainBox">
+                <div class="card-panel grey" id="hiHumanBox">
+
+                   <div id="hhText"> <span class="white-text">Hi, Human</span></div>
+                </div>
+                <div class="hhHomeBut">
+
+                <div class='row landingButtons '>
+                    <a id='signIn' class="swaves-effect waves-light btn  noAuth">Sign In</a>
+                </div>
+                <div class='row landingButtons '></div>
+                <a id='newAccountOpenModal'class="cwaves-effect waves-light btn noAuth">Create a New Account</a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+<!-- *** The Create New Profile Modal *** -->
+
+
+    <div id="signUpModal" class='modal'>
+
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <!-- Modal header -->
+            <div class='card-panel grey modalHeader'>
+                <span class='close' id="closeCreate">&times;</span>
+                <div class="modal-text white-text">CREATE YOUR HI, HUMAN ACCOUNT</div>
+            </div>
+
+            <!-- Materialize CSS Input Form for Create Profile-->
+            <div class="row">
+                <form name="signUpForm" class="col s7">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input name="signUpForm" id="email" type="text" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input name="signUpForm" id="user_name" type="text" class="validate">
+
+                            <label for="user_name">Username</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input name="signUpForm" id="userPassword" type="password" class="validate">
+                            <label for="userPassword">Password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input name="signUpForm" id="re-type_password" type="password" class="validate">
+                            <label for="re-type_password">Re-type Password</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+            <!-- Create account button within modal -->
+            <div class='row'>
+                <div class="input-field col s8">
+                    <a id='newAccount'class="waves-effect waves-light btn">Create Account</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- *** The SIGN IN Modal *** -->
+
+    <div id="signInModal" class='modal'>
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <!-- Modal header -->
+            <div class='card-panel grey modalHeader'>
+                <span class='close' id="closeSignIn">&times;</span>
+                <div class="modal-text white-text">Sign In</div>
+            </div>
+        <!-- Materialize CSS Input Form for Create Profile-->
+        <div class="row">
+            <form class="col s7">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="userSignIn" type="email" class="validate">
+                        <label for='userSignIn'>Email</label>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="user_password" type="password" class="validate">
+                            <label for="user_password">Password</label>
+                            <p class="hidden" id="wrongPassword">Password is incorrect</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Create account button within modal -->
+        <div class='row'>
+            <div class="input-field col s8">
+                <a id='userAccount'class="waves-effect waves-light btn">Sign In</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="page-footer">
+        <div class="footer-copyright">
+          <div class="container">
+          © 2017 Copyright
+          </div>
+        </div>
+    </footer>
+                
+                
+        <!-- Firebase Links -->
+        <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-database.js"></script>
+        <!-- This links jQuery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!-- This links JS -->
+        <script src="resources/js/app.js"></script>
+
+</body>
+
+</html>
