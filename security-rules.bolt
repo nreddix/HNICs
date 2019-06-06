@@ -1,0 +1,28 @@
+function isUser (auth, userKey) {
+  return auth.uid == userKey;
+}
+
+function isAdmin (auth) {
+  return root.child('users').child(auth.uid).child('isAdmin').val() == true;
+}
+
+path /users/{uid} {
+  read() { isUser(auth, uid) || isAdmin(auth) }
+  write() { isAdmin(auth) }
+  index() { ["email", "username"] }
+}
+
+path /userReadable/{objectType}/{uid} {
+  read() { isUser(auth, uid) || isAdmin(auth) }
+  write() { isAdmin(auth) }
+}
+
+path /userWriteable/{objectType}/{uid} {
+  read() { isAdmin(auth) }
+  write() { isUser(auth, uid) || isAdmin(auth) }
+}
+
+path /userOwned/{objectType}/{uid} {
+  read() { isUser(auth, uid) || isAdmin(auth) }
+  write() { isUser(auth, uid) || isAdmin(auth) }
+}
