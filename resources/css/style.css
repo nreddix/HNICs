@@ -1,0 +1,443 @@
+
+#hhText.white-text {
+    font-size: 118px;
+    text-align: center;
+    font-weight: 200;
+}
+span.white-text {
+    color: #fff !important;
+    font-size: 80px;
+    display: inherit;
+}
+.bnwhite-text {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+/* below .inwhite is for instructions/about us page */
+span.inwhite-text {
+    color: #fff !important;
+    font-size: 20px;
+    display: inherit;
+}
+
+.hhHomeBut {
+    position: absolute;
+    right: 502px;
+    margin: 70px;
+}
+/* "Hi, Human grey box on homepage */
+#hiHumanBox.card-panel.grey {
+    margin: 80px;
+}
+/* casual networking text inside teal box */
+.cNwhite-text {
+    font-weight: 700;
+    text-align: left;
+    font-size: 30px;
+    color: white;
+}
+/* teal business networking box on reason page */
+.bNcard-panel.teal {
+    position: absolute;
+    bottom: 20px;
+    left: 54px;
+    margin: -1px;
+    padding: 8px;
+    width: 381px;
+    border-radius: 2px;
+}
+/* teal casual networking box on reason page */
+.cNcard-panel.teal{
+    position: absolute;
+    bottom: -70px;
+    left: 74.5px;
+    margin: -1px;
+    padding: 8px;
+    border-radius: 2px;
+
+}
+/* teal finding inspiration box on reason page */
+.fIcard-panel.teal {
+    position: absolute;
+    bottom: -160px;
+    left: 77.5px;
+    margin: -1px;
+    padding: 8px;
+    border-radius: 2px;
+}
+.col.s12.m5 {
+    position: absolute;
+    width: 500px;
+    right: 29pc;
+    bottom: 350px;
+}
+/* below a.cwaves and a.swaves is for sign in and create acc buttons on homepage */
+a.swaves-effect.waves-light.btn {
+    position: absolute;
+    bottom: -240px;
+    right: 200px;
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 46px;
+    line-height: 36px;
+    width: 18rem;
+    padding: 6px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    font-weight: 700;
+    text-align: center;
+    font-size: large;
+}
+a.cwaves-effect.waves-light.btn {
+    position: absolute;
+    bottom: -40px;
+    right: -180px;
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 46px;
+    line-height: 36px;
+    width: 18rem;
+    padding: 6px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    font-weight: 700;
+    text-align: center;
+    font-size: large;
+}
+
+/* below .incard is for instructions/about us teal box */
+
+.incard-panel.teal {
+    position: fixed;
+    width: 800px;
+    top: 150px;
+    right: 19.4pc;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 2px;
+}
+#nextBut {
+    position: absolute;
+    margin: 70px;
+    right: 285px;
+    bottom: -440px;
+    
+}
+a.nwaves-effect.waves-light.btn {
+    font-weight: 900;
+}
+/* homepage text inside grey box */
+.white-text {
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+}
+ 
+/* Hi Human div box */
+#hiHumanBox {
+    padding: 50px;
+    font-size: 90px;
+    text-align: center;
+}
+
+/* choose your mask page teal box */
+.cymcard-panel.teal {
+    padding: 15px;
+    text-align: center;
+    margin: 20px;
+    position: absolute;
+    top: -255px;
+    left: -175px;
+    border-radius: 2px;
+    width: 800px;
+}
+
+/* choose your mask white text in teal box */
+.cymwhite-text {
+    color: white;
+    font-size: 42px;
+    text-align: center;
+    font-weight: 800;
+}
+
+/* Styling the modal */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* Main page features */
+
+.footer {
+    text-align: center;
+}
+
+.landingButtons {
+    margin: 0px;
+    position: absolute;
+    top: -200px;
+}
+
+#wrongPassword {
+    color: red;
+    display: none;
+}
+
+
+/* button BN for choose reason page */
+#bnBut {
+    background: #ff9900;
+    background: linear-gradient(#ff9900, #ff9900);
+    border: 1px solid #ff9901;
+    border-radius: 5px;
+    box-shadow: 0 1px #ff9904;
+    width: 57px;
+    height: 45px;
+    color: #ffffff;
+    display: inline-block;
+    font: normal bold 26px/45px "Arvo", serif;
+    text-align: center;
+    text-shadow: 1px 1px #000000;
+    position: relative;
+    left: 5px;
+}
+/* button CN for choose reason page */
+#cnBut {
+    background:    #ff0000;
+background:    linear-gradient(#ff0000, #ff0068);
+border:        1px solid #556699;
+border-radius: 5px;
+box-shadow:    0 1px #444444;
+width:         55px;
+height:        50px;
+color:         #ffffff;
+display:       inline-block;
+font:          normal bold 24px/50px "Playfair Display", serif;
+text-align:    center;
+text-shadow:   1px 1px #000000;
+}
+/* button FI for choose reason page */
+#fiBut {
+    background:    #0000ff;
+background:    linear-gradient(#0000ff, #9900ff);
+border:        1px solid #556699;
+border-radius: 5px;
+box-shadow:    0 1px #444444;
+width:         55px;
+height:        50px;
+color:         #ffffff;
+display:       inline-block;
+font:          normal bold 24px/50px "Playfair Display", serif;
+text-align:    center;
+text-shadow:   1px 1px #000000;
+}
+/* teal box on reasons page */
+.recard-panel.teal {
+    padding: 15px;
+    text-align: center;
+    margin: 20px;
+    position: absolute;
+    top: -255px;
+    left: -175.8px;
+    width: 800px;
+}
+/* text in teal box on reasons page */
+.rewhite-text {
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+    padding: 30px;
+    
+}
+/* ROW 1 choose masks on MASK on "CHOOSE MASK PAGE" */
+#saveForm.btTxt.submit {
+    margin-left: 90px;
+    position: absolute;
+    top: 288px;
+    height: 130px;
+}
+/* second row of MASK on "CHOOSE MASK PAGE" */
+#tsaveForm.btTxt.submit {
+    margin-left: 90px;
+    position: absolute;
+    top: 498px;
+    height: 130px;
+}
+/* [HiH] logo in navbar */
+a.brand-logo {
+    font-weight: 800;
+}
+
+/* next button mask page */
+div#cymNext {
+    position: absolute;
+    margin: 70px;
+    right: 610px;
+    bottom: -100px;
+}
+
+/* icons page  */
+.div.row {
+    position: absolute;
+    bottom: 800px;
+}
+
+#mbsaveForm.btTxt.submit {
+    margin: 20px;
+    position: absolute;
+    top: 288px;
+    height: 120px;
+}
+
+.selected {
+    border: 1px dashed teal;
+}
+
+/* teal box on top of "choose your traits/ personality icons page" */
+.cytcard-panel.teal {
+    padding: 15px;
+    text-align: center;
+    margin: 20px;
+    position: absolute;
+    top: -255px;
+    left: -180.5px;
+    border-radius: 2px;
+    width: 800px;
+}
+/* white text inside teal box on "choose your traits/ personality icons page" */
+.cytwhite-text {
+    color: white;
+    font-size: 42px;
+    padding: 30px;
+    font-weight: 700;
+}
+
+#cytsaveForm.btTxt.submit {
+    margin-left: 38px;
+    position: absolute;
+    top: 288px;
+    height: 130px;
+}
+#cyttsaveForm.btTxt.submit {
+    margin-left: 38px;
+    position: absolute;
+    top: 498px;
+    height: 130px;
+}
+
+div#cytNext {
+    position: absolute;
+    bottom: -35px;
+    left: 680px;
+    
+
+}
+/* reason for meeting page NEXT button */
+div#reNext {
+    position: absolute;
+    top: 580px;
+    left: 680px;
+}
+/* "user profile" page  */
+
+/* #userBox {
+} */
+/*teal box that holds New User profile choices  */
+.uscard-panel.teal {
+    position: absolute;
+    top: -125px;
+    left: -5.5px;
+    padding: 30px;
+    height: 450px;
+    width: 500px;
+    text-align: center;
+    border: black;
+    border-style: solid;
+    border-width: 7px;
+}
+/* white text that displays NEW USERNAME */
+.uswhite-text {
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+    
+}
+/* "configure profile" button on user profile page */
+#usnextBut {
+    position: absolute;
+    bottom: -80px;
+    left: 628px;
+}
+/* should display whatever mask new user chooses */
+img.userMask {
+    position: absolute;
+    top: 120px;
+    left: 188px;
+}
+/* this row holds new user icon choices inside of teal box on USER PROFILE */
+div.usrow {
+    position: absolute;
+    top: 245px;
+    left: 90.2px;
+
+}
+/* finding inspiration icon/button user choose on USER PROFILE PAGE */
+#userFiBut {
+    background:    #0000ff;
+background:    linear-gradient(#0000ff, #9900ff);
+border:        1px solid #556699;
+border-radius: 5px;
+box-shadow:    0 1px #444444;
+width:         225px;
+height:        60px;
+color:         #ffffff;
+display:       inline-block;
+font:          normal bold 24px/50px "Playfair Display", serif;
+text-align:    center;
+text-shadow:   1px 1px #000000;
+}
+/* blue/purple box that Finding Inspiration is inside on USER PROFILE PAGE */
+div.userReason {
+    position: absolute;
+    top: 350px;
+    left: 138px;
+}
